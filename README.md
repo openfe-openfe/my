@@ -1,9 +1,9 @@
 ## 支付宝小程序-豆瓣电影项目
 
 ### 效果图
-![image](https://github.com/songhaoreact/weixin/blob/master/screenshots/1.png)
-![image](https://github.com/songhaoreact/weixin/blob/master/screenshots/2.png)
-![image](https://github.com/songhaoreact/weixin/blob/master/screenshots/3.png)
+![image](https://github.com/songhaoreact/my/blob/master/screenshots/1.png)
+![image](https://github.com/songhaoreact/my/blob/master/screenshots/2.png)
+![image](https://github.com/songhaoreact/my/blob/master/screenshots/3.png)
 
 ### 功能说明
 接口访问来自豆瓣api,目前功能有
