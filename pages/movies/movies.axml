@@ -1,0 +1,25 @@
+<import src="./movie-list/movie-list-template.axml" />
+<import src="./movie-grid/movie-grid-template.axml" />
+<view class="search">
+    <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="输入演员或片名" 
+    placeholder-class="placeholder" onFocus="onBindFocus"
+    onBlur="onBindBlur"/>
+    <image a:if="{{searchPanelShow}}" src="/images/icon/xx.png" class="xx-img" onTap="onCancelImgTap"></image>
+</view>
+<view class="container" a:if="{{containerShow}}">
+    <view class="movies-template">
+      <template is="movieListTemplate" data="{{...inTheaters}}" />
+    </view>
+
+    <view class="movies-template">
+      <template is="movieListTemplate" data="{{...comingSoon}}" />
+    </view>
+    <view class="movies-template">
+      <template is="movieListTemplate" data="{{...top250}}"/>
+    </view>
+</view>
+
+<view class="search-panel" a:if="{{searchPanelShow}}">
+      <template is="movieGridTemplate" data="{{...searchResult}}"/>
+</view>

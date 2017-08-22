@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movies/movies",
+    "pages/movies/movie-detail/movie-detail",
+    "pages/movies/more-movie/more-movie"
+  ],
+  "window": {
+    "defaultTitle": "",
+    "titleBarColor": "#314C6D",
+    "backgroundColor":"#ffffff"
+  }
+}

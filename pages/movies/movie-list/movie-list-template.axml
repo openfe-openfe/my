@@ -1,0 +1,26 @@
+<import src="../movie/movie-template.axml" />
+<template name="movieListTemplate">
+  <view class="movie-list-container">
+    <view class="inner-container">
+      <view class="movie-head">
+        <text class="slogan">{{categoryTitle}}</text>
+        <view catchTap="onMoreTap" class="more" data-category="{{categoryTitle}}">
+          <text class="more-text">更多</text>
+          <image class="more-img" src="/images/icon/arrow-right.png"></image>
+        </view>
+      </view>
+      
+        <view class="movies-container">
+             <scroll-view scroll-x style="width: 100%">
+              <block a:for="{{movies}}" a:for-item="movie">
+                
+                <template is="movieTemplate" data="{{...movie}}"/>
+              </block>
+            </scroll-view> 
+          <!--<template is="movieTemplate" />
+          <template is="movieTemplate" />-->
+        </view>
+
+    </view>
+  </view>
+</template>

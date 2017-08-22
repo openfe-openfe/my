@@ -1,0 +1,11 @@
+<template name="starsTemplate">
+  <view class="stars-container">
+    <view class="stars">
+      <block a:for="{{stars}}" a:for-item="i" a:key="index">
+        <image a:if="{{i}}" src="/images/icon/star.png"></image>
+        <image a:else src="/images/icon/none-star.png"></image>
+      </block>
+    </view>
+    <text class="star-score">{{score}}</text>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+<import src="../movie/movie-template.axml" />
+<template name="movieGridTemplate">
+  <view class="grid-container">
+    <block a:for="{{movies}}" a:for-item="movie" a:key="index">
+      <view class="single-view-container">
+        <template is="movieTemplate" data="{{...movie}}" />
+      </view>
+    </block>
+  </view>
+</template>
